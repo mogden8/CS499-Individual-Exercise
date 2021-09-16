@@ -22,6 +22,19 @@ class sortArrayTest {
 			assertTrue(Character.isLetter(Letters.get(x)));
 		}
 		
+		ArrayList<Character> Nums = sortArray.sortArrayNums(A);
+		
+		for (int x=Nums.size()-1;x>0; x--) {
+			assertTrue(Character.isDigit(Nums.get(x)));
+		}
+		
+		ArrayList<Character> Misc = sortArray.sortArrayMisc(A);
+		
+		for (int x=Misc.size()-1;x>0; x--) {
+			assertFalse(Character.isDigit(Misc.get(x)));
+			assertFalse(Character.isLetter(Misc.get(x)));
+		}
+		
 		
 	}
 
