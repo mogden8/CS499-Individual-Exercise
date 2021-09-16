@@ -12,6 +12,8 @@ public class sortArray {
 		printArray(array);
 		//sort letters from array and print
 		sortArrayLetters(array);
+		sortArrayNums(array);
+		sortArrayMisc(array);
 	}
 	
 public static ArrayList createArray() {
@@ -52,6 +54,43 @@ public static ArrayList<Character> sortArrayLetters(ArrayList A) {
 	
 	
 }
+public static ArrayList<Character> sortArrayNums(ArrayList A) {
+	
+	ArrayList<Character> numArray= new ArrayList<Character>();
+	
+	for (int x=A.size()-1;x>0; x--) {
+		char y=(char)A.get(x);
+		if (Character.isDigit(y))
+			 numArray.add(y);
+	}
+	
+	System.out.println("Numbers: ");
+	
+	printArray(numArray);
+	
+	return numArray;
+	
+	
+}
+public static ArrayList<Character> sortArrayMisc(ArrayList A) {
+	
+	ArrayList<Character> miscArray= new ArrayList<Character>();
+	
+	for (int x=A.size()-1;x>0; x--) {
+		char y=(char)A.get(x);
+		if (Character.isDigit(y)!=true && Character.isLetter(y)!=true)
+			 miscArray.add(y);
+	}
+	
+	System.out.println("Misc: ");
+	
+	printArray(miscArray);
+	
+	return miscArray;
+	
+	
+}
+
 
 
 }
