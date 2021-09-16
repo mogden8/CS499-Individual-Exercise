@@ -7,6 +7,7 @@ public class sortArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//create random array
+		//
 		ArrayList array = createArray();
 		//print random array
 		printArray(array);
