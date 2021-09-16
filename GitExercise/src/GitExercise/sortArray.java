@@ -11,7 +11,7 @@ public class sortArray {
 		//print random array
 		printArray(array);
 		//sort letters from array and print
-		sortPrintArray(array);
+		sortArrayLetters(array);
 	}
 	
 public static ArrayList createArray() {
@@ -29,11 +29,12 @@ public static ArrayList createArray() {
 public static void printArray(ArrayList A) {
 	int y=0;
 	for (int x=A.size()-1;x>0; x--) {
-		System.out.println(A.get(x));
+		System.out.print(A.get(x));
 	}
+	System.out.println();
 }
 
-public static void sortPrintArray(ArrayList A) {
+public static ArrayList<Character> sortArrayLetters(ArrayList A) {
 	
 	ArrayList<Character> letterArray= new ArrayList<Character>();
 	
@@ -45,9 +46,9 @@ public static void sortPrintArray(ArrayList A) {
 	
 	System.out.println("Letters: ");
 	
-	for (int x=letterArray.size()-1;x>0; x--) {
-		System.out.print(letterArray.get(x));
-	}
+	printArray(letterArray);
+	
+	return letterArray;
 	
 	
 }
