@@ -6,6 +6,7 @@ public class sortArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//new comment
 		//create random array
 		//
 		ArrayList array = createArray();
